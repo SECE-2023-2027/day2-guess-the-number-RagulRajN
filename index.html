@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Random Number</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Guess My Number</h1>
+    </div>
+    <hr />
+    <br><br>
+    <div class="main">
+      <div class="input-box">
+        <p>Guess The Number (1-100) :</p>
+        <div>
+          <input type="number" id="inp" min="0" max="100" />
+        </div>
+        <div>
+          <button onclick="checkRand()" id="check">Check</button>
+        </div>
+      </div>
+
+      <div>
+        <p id="attemptsContainer">
+          Number of attempts left :
+          <span id="attempts">20</span>
+        </p>
+        <p id="remarks"></p>
+        <p>
+          Last Score :
+          <span id="lastscore">0</span>
+        </p>
+        <p>
+          Highest Score:
+          <span id="maxScore">0</span>
+        </p>
+      </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="bottom">
+      <button onclick="startGame()" id="newGame">New Game</button>
+    </div>
+    <script src="index.js"></script>
+
+  </body>
+</html>
